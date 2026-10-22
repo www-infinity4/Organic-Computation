@@ -11,7 +11,10 @@ Primary references: [DARPA program](https://www.darpa.mil/events/2026/o-circuit-
 
 Molecular Informatics and Living Foundries are related DARPA programs, but neither is interchangeable with O-Circuit.
 
-## Stage 1: Baseline reproducibility
+## Stage 1: Baseline reproducibility — initial upgrade implemented
+
+A fixed-seed benchmark now compares the existing Hopfield-style recall function against nearest-template and identity comparators on the same examples. Machine-readable JSON includes exact counts and approximate Wilson intervals, and CI attaches the results. This **does not** validate biological performance. See [evidence map](evidence-map.md).
+
 
 Run the included associative-memory experiment and repeat with the same random seed. Record training patterns, flips per input, number of trials, accuracy and expected failure cases. The current simulator is a toy recurrent model. Compare with a no-learning or nearest-pattern baseline on precisely the same inputs.
 
