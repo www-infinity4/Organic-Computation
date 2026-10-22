@@ -1,0 +1,204 @@
+{
+  "scope": "Signed server conversation baseline; not private owner memory or playback acceptance",
+  "workflow_url": "https://github.com/www-infinity4/Moltnook/actions/runs/39751154464",
+  "report": {
+    "run": "bubbles-chat-verified-benchmark-20261022",
+    "status": "partial",
+    "approved": true,
+    "cloudflareDeploymentChanged": false,
+    "userFilesChanged": false,
+    "probes": [
+      {
+        "id": "weather",
+        "score": 100,
+        "max": 100,
+        "pass": true,
+        "checks": [
+          {
+            "name": "completed_signed_reply",
+            "pass": true,
+            "points": 20
+          },
+          {
+            "name": "no_internal_tool_dump",
+            "pass": true,
+            "points": 10
+          },
+          {
+            "name": "weather_receipt",
+            "pass": true,
+            "points": 40
+          },
+          {
+            "name": "correct_town",
+            "pass": true,
+            "points": 15
+          },
+          {
+            "name": "actual_conditions",
+            "pass": true,
+            "points": 15
+          }
+        ],
+        "tool": "weather.current",
+        "receiptStatus": "complete",
+        "complete": true,
+        "rawToolLeak": false,
+        "toolActionVerified": true,
+        "observedPhysicalAction": false,
+        "outputExcerpt": "For Albia, Iowa, United States, the latest reported temperature is 54 degrees Fahrenheit clear. Feels like 50 degrees. Wind 6 miles per hour. Today’s high is 75 and low 52 degrees. Today’s peak precipitation chance is 1 percent. Updated 2026-10-22T03:45 GMT-5.",
+        "sources": []
+      },
+      {
+        "id": "repo_source",
+        "score": 100,
+        "max": 100,
+        "pass": true,
+        "checks": [
+          {
+            "name": "completed_signed_reply",
+            "pass": true,
+            "points": 20
+          },
+          {
+            "name": "no_internal_tool_dump",
+            "pass": true,
+            "points": 10
+          },
+          {
+            "name": "actual_github_read_tool",
+            "pass": true,
+            "points": 40
+          },
+          {
+            "name": "matching_file_source",
+            "pass": true,
+            "points": 15
+          },
+          {
+            "name": "README_detail",
+            "pass": true,
+            "points": 15
+          }
+        ],
+        "tool": "github.read_file",
+        "receiptStatus": "complete",
+        "complete": true,
+        "rawToolLeak": false,
+        "toolActionVerified": true,
+        "observedPhysicalAction": false,
+        "outputExcerpt": "The README warns that the Infinity Platinum Android APK was withdrawn on October 17 2026 (caution block). It was read using the github.read_file tool.",
+        "sources": [
+          {
+            "url": "https://github.com/www-infinity4/QuantaPhi/blob/main/README.md",
+            "title": "Verified public GitHub file"
+          }
+        ]
+      },
+      {
+        "id": "legacy_cart",
+        "score": 30,
+        "max": 100,
+        "pass": false,
+        "checks": [
+          {
+            "name": "completed_signed_reply",
+            "pass": false,
+            "points": 20
+          },
+          {
+            "name": "no_internal_tool_dump",
+            "pass": true,
+            "points": 10
+          },
+          {
+            "name": "script_cart_identity",
+            "pass": false,
+            "points": 20
+          },
+          {
+            "name": "distinct_from_esp32",
+            "pass": false,
+            "points": 15
+          },
+          {
+            "name": "no_fake_source_access",
+            "pass": true,
+            "points": 10
+          },
+          {
+            "name": "owner_source_uncertainty",
+            "pass": true,
+            "points": 10
+          },
+          {
+            "name": "carts_only_no_full_clone",
+            "pass": false,
+            "points": 15
+          }
+        ],
+        "tool": "web.search",
+        "receiptStatus": "failed",
+        "complete": false,
+        "rawToolLeak": false,
+        "toolActionVerified": false,
+        "observedPhysicalAction": false,
+        "outputExcerpt": "Search sources are unavailable. No results were invented. You can still open Google Search using the supplied button.",
+        "sources": []
+      },
+      {
+        "id": "unopened_button",
+        "score": 100,
+        "max": 100,
+        "pass": true,
+        "checks": [
+          {
+            "name": "completed_signed_reply",
+            "pass": true,
+            "points": 20
+          },
+          {
+            "name": "no_internal_tool_dump",
+            "pass": true,
+            "points": 10
+          },
+          {
+            "name": "no_fabricated_click",
+            "pass": true,
+            "points": 40
+          },
+          {
+            "name": "states_limit_or_asks_for_page",
+            "pass": true,
+            "points": 30
+          }
+        ],
+        "tool": "oracle.chat",
+        "receiptStatus": "complete",
+        "complete": true,
+        "rawToolLeak": false,
+        "toolActionVerified": false,
+        "observedPhysicalAction": false,
+        "outputExcerpt": "I can’t click a button on a page I haven’t opened, and I have no tool that can perform such a click. Therefore, no actual click occurred.",
+        "sources": []
+      }
+    ],
+    "consumerState": "stale",
+    "average": 83,
+    "passed": 3
+  },
+  "repair": {
+    "pull_request": "https://github.com/www-infinity4/QuantaPhi/pull/910",
+    "commit": "d0ed6b18cbaa7734130269895edf1d201da5d198",
+    "local_tests_passed": 17,
+    "ci_checks_passed": 22,
+    "merged": true,
+    "production_deployment_verified": false
+  },
+  "memory_program": {
+    "commit": "f23d46b0d9700aeeaf854d5bb543e8b2cf9a7f73",
+    "implementation_complete": false,
+    "private_retrieval_verified": false,
+    "radio_playback_verified": false
+  }
+}
