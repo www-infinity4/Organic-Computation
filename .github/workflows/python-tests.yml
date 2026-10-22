@@ -1,0 +1,23 @@
+name: Organic Computation Phi verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python source compilation
+        run: python3 -m compileall -q simulations tests
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Reproducible associative memory experiment
+        run: python3 simulations/associative_memory.py
