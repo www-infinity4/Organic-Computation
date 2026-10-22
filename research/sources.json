@@ -1,0 +1,23 @@
+{
+  "checkedDate": "2026-10-22",
+  "sources": [
+    {
+      "title": "O-Circuit",
+      "url": "https://www.darpa.mil/events/2026/o-circuit-proposers-day",
+      "provider": "DARPA",
+      "evidenceType": "program description / 2026 solicitation"
+    },
+    {
+      "title": "Molecular Informatics",
+      "url": "https://www.darpa.mil/research/programs/molecular-informatics",
+      "provider": "DARPA",
+      "evidenceType": "program page"
+    },
+    {
+      "title": "Living Foundries",
+      "url": "https://www.darpa.mil/research/programs/living-foundries",
+      "provider": "DARPA",
+      "evidenceType": "program page"
+    }
+  ]
+}

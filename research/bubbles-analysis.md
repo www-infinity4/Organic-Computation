@@ -1,0 +1,13 @@
+# Bubbles preliminary research response
+
+**Provenance:** Bubbles response received through the signed server conversation. Scientific claims still require source checking.
+
+Live results from Infinity Phi / QuantaPhi search: 1. DARPA SHINE Disruption Opportunity for Neuroplasticity-Based ... — 7 Aug 2026 ... If you're working on neuroplasticity-based approaches to psychiatric disease, this is a great funding opportunity to have on your radar!
+2. Towards neuromorphic neurotechnologies: integrating brain ... — 20 Aug 2026 ... It highlights recent progress in AI, particularly neuromorphic computing and spiking neural networks (SNNs), and introduces Brain-Inspired Brain ...
+3. 2026 Annual Report: The Ecology of Brain-Computer Interfaces — 6 Jan 2026 ... The Next-Generation Nonsurgical Neurotechnology (N3) program (2018–2025), managed by Dr. Al Emondi (DARPA Biological Technologies Office), ...
+4. Justification Book - DARPA — - Develop the computational infrastructure required for analysis and prioritization of cellular/molecular target space. ... neural signals through tissue ...
+5. Kinetic intelligent wireless implant/neurons on augmented human — In the field of neural modulation, Direct Brain Stimulation (DBS) was first approved for the symptomatic treatment of Parkinson's disease in 1997 and remains ...
+Search results are available, but the requested explanation or plan is not complete.
+
+## Research controls
+This is not a scientific review, real wet-lab experiment, or grant award. Source pages are curated independently in sources.json.
