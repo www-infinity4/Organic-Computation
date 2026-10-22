@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "organic_computation.benchmark",
+  "name": "Organic Computation software benchmark",
+  "description": "Run a bounded fixed-pattern associative-memory comparison. Read-only, digital-only; no biological experimentation, account access or deployment.",
+  "implementation_status": "source_ready_not_deployed",
+  "source_repository": "www-infinity4/Organic-Computation",
+  "source_path": "simulations/benchmark.py",
+  "runner": "python3 -m simulations.benchmark",
+  "sandbox_requirements": {
+    "network": false,
+    "environment_secrets": false,
+    "filesystem_writes": false,
+    "python_version": "3.12",
+    "max_execution_seconds": 15
+  },
+  "inputs": {
+    "type": "object",
+    "properties": {
+      "seed": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 4294967295,
+        "default": 111
+      },
+      "trials": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10000,
+        "default": 250
+      },
+      "noise": {
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "minItems": 1,
+        "maxItems": 7,
+        "uniqueItems": true,
+        "default": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "additionalProperties": false
+  },
+  "output_fields": [
+    "schema_version",
+    "model_type",
+    "task",
+    "seed",
+    "trials_per_noise_level",
+    "pattern_count",
+    "pattern_length_bits",
+    "methods",
+    "metrics",
+    "baseline",
+    "limitations",
+    "research_citations"
+  ],
+  "security_notes": [
+    "Source-only manifest does not register a live Bubbles tool",
+    "No GitHub or Cloudflare authorization is inferred from this benchmark",
+    "A model narrative is not a verified tool execution receipt",
+    "Do not report simulated results as biological-tissue performance"
+  ],
+  "display": {
+    "title": "Organic Computation",
+    "style": "Oracle Octaves white card",
+    "mode": "research",
+    "show_limitations": true,
+    "source_url": "https://github.com/www-infinity4/Organic-Computation"
+  }
+}

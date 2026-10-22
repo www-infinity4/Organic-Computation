@@ -21,3 +21,23 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Reproducible associative memory experiment
         run: python3 simulations/associative_memory.py
+      - name: Compare identical noisy examples against simple baselines
+        run: |
+          python3 -m simulations.benchmark --seed 111 --trials 250 --noise 0 1 2 3 > benchmark-results.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open("benchmark-results.json",encoding="utf-8"))
+          assert d["schema_version"]==1
+          assert d["model_type"]=="toy_binary_associative_memory"
+          assert len(d["metrics"])==4
+          assert all(row["results"]["identity"]["correct"]==0 for row in d["metrics"][1:])
+          assert all(0<=m["accuracy"]<=1 for r in d["metrics"] for m in r["results"].values())
+          print("Verified benchmark schema, deterministic methods and source limitations")
+          PY
+      - name: Attach exact benchmark JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: organic-computation-benchmark
+          path: benchmark-results.json
+          if-no-files-found: error
+          retention-days: 14
