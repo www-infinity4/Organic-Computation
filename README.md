@@ -15,8 +15,16 @@ A research and software-simulation project prepared through the Bubbles AI signe
 5. Theories: a separate, clearly speculative track for user-proposed hydrogen/electron/energy connections, with explicit falsifiable predictions and tests.
 
 ## Run
-    python3 simulations/associative_memory.py
-    python3 -m unittest discover -s tests
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 simulations/associative_memory.py
+python3 -m simulations.benchmark --seed 111 --trials 250 --noise 0 1 2 3
+```
+
+**Benchmark upgrade:** the new command returns JSON accuracy, counts and confidence intervals for a fixed Hopfield-style associative-memory model and two baselines (stored nearest-template and unchanged noisy input). The same examples are evaluated by every method. A simpler method can outperform the neural-inspired model; this is a scientific comparison, not proof of biological efficiency.
+
+Read [the evidence map](research/evidence-map.md) for which DARPA claims are supported. Bubbles now has a [proposed read-only tool contract](bubbles/README.md); the Python benchmark is tested, but the live Bubbles tool adapter is **not yet deployed**.
 
 Nothing in this repository grows biological tissue, enables drone control, supplies wet-lab protocols, or establishes a commercial product. No DARPA affiliation or funding is claimed.
 
