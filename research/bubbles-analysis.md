@@ -1,13 +1,14 @@
-# Bubbles preliminary research response
+# Bubbles initial research — search excerpts, not a complete literature review
 
-**Provenance:** Bubbles response received through the signed server conversation. Scientific claims still require source checking.
+The signed Bubbles workflow returned a **completed tool receipt** on October 22, 2026. Its reply was a collection of search excerpts and stated that the requested explanation was **not complete**. This is a successful message transport, but **not a completed scientific analysis**.
 
-Live results from Infinity Phi / QuantaPhi search: 1. DARPA SHINE Disruption Opportunity for Neuroplasticity-Based ... — 7 Aug 2026 ... If you're working on neuroplasticity-based approaches to psychiatric disease, this is a great funding opportunity to have on your radar!
-2. Towards neuromorphic neurotechnologies: integrating brain ... — 20 Aug 2026 ... It highlights recent progress in AI, particularly neuromorphic computing and spiking neural networks (SNNs), and introduces Brain-Inspired Brain ...
-3. 2026 Annual Report: The Ecology of Brain-Computer Interfaces — 6 Jan 2026 ... The Next-Generation Nonsurgical Neurotechnology (N3) program (2018–2025), managed by Dr. Al Emondi (DARPA Biological Technologies Office), ...
-4. Justification Book - DARPA — - Develop the computational infrastructure required for analysis and prioritization of cellular/molecular target space. ... neural signals through tissue ...
-5. Kinetic intelligent wireless implant/neurons on augmented human — In the field of neural modulation, Direct Brain Stimulation (DBS) was first approved for the symptomatic treatment of Parkinson's disease in 1997 and remains ...
-Search results are available, but the requested explanation or plan is not complete.
+The initial search pointed to DARPA neuroplasticity, neuromorphic neurotechnology, brain–computer interfaces, and related topics. Those search excerpts were not full papers, and their connection to O-Circuit has not yet been validated.
 
-## Research controls
-This is not a scientific review, real wet-lab experiment, or grant award. Source pages are curated independently in sources.json.
+For substantive research start with the directly relevant, dated primary sources:
+- [DARPA O-Circuit program](https://www.darpa.mil/events/2026/o-circuit-proposers-day)
+- [DARPA-PS-26-28 solicitation, May 1, 2026](https://sam.gov/opp/6d28dbf9da1f4fe09c58d5ad7896fe9c/view)
+- [DARPA O-Circuit earlier notice, March 3, 2026](https://sam.gov/opp/f8fd222be5f046b887fb4759b2d7d123/view)
+
+**Next Bubbles research task:** summarize these original sources separately, identify explicit program goals versus measured outcomes, and compare their claims with the repository's simulation. Do not claim DARPA endorsement or biological computation from Python test success. See [development roadmap](development-roadmap.md).
+
+This document replaces preliminary excerpts that could otherwise be mistaken for verified scientific findings.
